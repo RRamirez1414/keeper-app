@@ -4,7 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
-  "homepage": "https://github.com/RRamirez1414/keeper-app",
+  "homepage": "https://RRamirez1414.github.io/keeper-app",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
@@ -14,10 +14,13 @@
     "react-scripts": "3.2.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "typescript": "3.3.3"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
